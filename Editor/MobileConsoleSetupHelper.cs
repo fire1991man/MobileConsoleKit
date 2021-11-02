@@ -37,6 +37,7 @@ namespace MobileConsole.Editor
 			AddDebugLogDefineSymbolForGroup(BuildTargetGroup.iOS);
 			AddDebugLogDefineSymbolForGroup(BuildTargetGroup.Android);
 			AddDebugLogDefineSymbolForGroup(BuildTargetGroup.Standalone);
+			AddDebugLogDefineSymbolForGroup(BuildTargetGroup.WebGL);
 			AddLogConsoleToBuildSettings();
 			EnableDevelopmentBuild();
 			Debug.Log("Enable Mobile Console Completed");
@@ -48,6 +49,7 @@ namespace MobileConsole.Editor
 			RemoveDebugLogDefineSymbolForGroup(BuildTargetGroup.iOS);
 			RemoveDebugLogDefineSymbolForGroup(BuildTargetGroup.Android);
 			RemoveDebugLogDefineSymbolForGroup(BuildTargetGroup.Standalone);
+			RemoveDebugLogDefineSymbolForGroup(BuildTargetGroup.WebGL);
 			RemoveLogConsoleFromBuildSettings();
 			Debug.Log("Disable Mobile Console Completed");
 		}
